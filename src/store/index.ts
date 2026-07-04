@@ -408,7 +408,7 @@ export const useStore = create<AppState>()(
       // ULTRAPLINIAN initial state
       ultraplinianEnabled: false,
       ultraplinianTier: 'fast' as const,
-      ultraplinianApiUrl: 'http://localhost:7860',
+      ultraplinianApiUrl: 'https://sathwik2212-backend-api.hf.space',
       ultraplinianApiKey: '',
       ultraplinianLiveContent: null,
       ultraplinianLiveModel: null,
