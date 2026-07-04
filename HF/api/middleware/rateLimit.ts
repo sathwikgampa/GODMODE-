@@ -20,7 +20,7 @@ interface RateBucket {
   dayRequests: number[]
 }
 
-const TOTAL_LIMIT = parseInt(process.env.RATE_LIMIT_TOTAL || '5', 10)
+const TOTAL_LIMIT = parseInt(process.env.RATE_LIMIT_TOTAL || '0', 10) // 0 means disabled
 const MINUTE_LIMIT = parseInt(process.env.RATE_LIMIT_PER_MINUTE || '60', 10)
 const DAY_LIMIT = parseInt(process.env.RATE_LIMIT_PER_DAY || '1000', 10)
 const MINUTE_MS = 60 * 1000
